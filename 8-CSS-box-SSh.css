@@ -1,0 +1,31 @@
+.container{
+  float: right;
+  display: flex;
+  flex-wrap: wrap;
+
+
+}
+
+.box{
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "New Times Roman",serif;
+  font-style: italic;
+  margin: 10px;
+}
+
+.red{
+  background-color: red;
+}
+
+.green{
+  background-color: green;
+}
+
+.yellow{
+  background-color: yellow;
+}

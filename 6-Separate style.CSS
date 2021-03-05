@@ -1,0 +1,19 @@
+
+p{color:red;
+  font-family: fantasy;
+  font-size: 1.5em;
+}
+li{color:black;
+  text-decoration: underline;
+  background-color: yellow;
+  font-family: sans-serif;
+
+}
+.text{
+  border:10px solid purple;
+  width: 80%;
+  height: 50%;
+  padding: 0.5em;
+  margin-left: 1em;
+  float: center;
+}
