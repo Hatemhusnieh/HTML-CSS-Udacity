@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Difinitions, Page Navigations and Tabels</title>
+    <style>
+        div{
+            border: 3px solid red;
+            padding: 5px;
+            margin: 5px;
+        }
+        .inner{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        The definition list is created with
+        the <`dl`> element and usually
+        consists of a series of terms and
+        their definitions.
+        Inside the <`dl`> element you will
+        usually see pairs of <`dt`> (t stands for term)and
+        <`dd`> (d stands for difinition) elements.
+        <dl>
+            <dt>Sashimi</dt>
+            <dd>Sliced raw fish that is served with
+            condiments such as shredded daikon radish or
+            ginger root, wasabi and soy sauce</dd>
+            <dt>Scale</dt>
+            <dd>A device used to accurately measure the
+            weight of ingredients</dd>
+            <dd>A technique by which the scales are removed
+            from the skin of a fish</dd>
+            <dt>Scamorze</dt>
+            <dt>Scamorzo</dt>
+            <dd>An Italian cheese usually made from whole
+            cow's milk (although it was traditionally made
+            from buffalo milk)</dd>
+            </dl>
+            <dt>hatem
+                <dd>
+                    a sexy man
+                </dd>
+            </dt>
+    </div>
+    
+    
+    <div>
+        <h1>Relative URL</h1>
+        <p> <img src="RelURL.png" alt="relative URL">
+        </p>
+    </div>
+
+    <div>
+        <h1>Page Navigation</h1>
+        to link to a specific part of a page :
+
+        <h1 id="top">Film-Making Terms</h1>
+        <a href="#arc_shot">Arc Shot</a><br />
+        <a href="#interlude">Interlude</a><br />
+        <a href="#prologue">Prologue</a><br /><br />
+        <h2 id="arc_shot">Arc Shot</h2>
+        <p>A shot in which the subject is photographed by an
+        encircling or moving camera</p>
+        <h2 id="interlude">Interlude</h2>
+        <p>A brief, intervening film scene or sequence, not
+        specifically tied to the plot, that appears
+        within a film</p>
+        <h2 id="prologue">Prologue</h2>
+        <p>A speech, preface, introduction, or brief scene
+        preceding the the main action or plot of a film;
+        contrast to epilogue</p>
+        <p><a href="#top">Top</a></p>
+        
+    </div>
+
+    <div>
+        <h1>Image captions</h1>
+        Images often come with
+        captions. HTML5 has introduced
+        a new <`figure`> element to
+        contain images and their caption
+        so that the two are associated.
+        You can have more than one
+        image inside the <`figure`>
+        element as long as they all share
+        the same caption.<br><br>
+        The <`figcaption`> element has
+        been added to HTML5 in order
+        to allow web page authors to add
+        a caption to an image.
+        Before these elements were
+        created there was no way to
+        associate an <`img`> element with
+        its caption.
+        <figure>
+        <img src="mini-ProPic.jpeg" 
+        width="100px" height="150px" 
+        alt="Photograph me">
+        <br />
+        <figcaption>The is a creature called Hatem. 
+            He is so sofisticated and rare.</figcaption>
+        </figure>
+    </div>
+
+    <div>
+        <div class= "inner">
+            <h1>Tabels</h1>
+            The <`table`> element is used
+            to create a table. The contents
+            of the table are written out row
+            by row.<br><br>
+            You indicate the start of each
+            row using the opening <`tr`> tag.
+            (The tr stands for table row.)
+            It is followed by one or more
+            <`td`> elements (one for each cell
+            in that row).<br><br>
+            Each cell of a table is
+            represented using a <`td`>
+            element. (The td stands for
+            table data.)
+            <table>
+              <tr>
+              <td>15</td>
+              <td>15</td>
+              <td>30</td>
+              </tr>
+              <tr>
+              <td>45</td>
+              <td>60</td>
+              <td>45</td>
+              </tr>
+              <tr>
+              <td>60</td>
+              <td>90</td>
+              <td>90</td>
+              </tr>
+              </table>
+            </div>
+            <div class= "inner">
+            The <`th`> element is used just
+            like the <`td`> element but its
+            purpose is to represent the
+            heading for either a column or
+            a row. (The th stands for table
+            heading.)<br><br>
+            <b>Even if a cell has no content,
+            you should still use a <td> or
+            <th> element to represent
+            the presence of an empty cell
+            otherwise the table will not
+            render correctly. (The first cell
+            in the first row of this example
+            shows an empty cell.)</b>
+            <table>
+              <tr>
+              <th></th>
+              <th scope="col">Saturday</th>
+              <th scope="col">Sunday</th>
+              </tr>
+              <tr>
+              <th scope="row">Tickets sold:</th>
+              <td>120</td>
+              <td>135</td>
+              </tr>
+              <tr>
+              <th scope="row">Total sales:</th>
+              <td>$600</td>
+              <td>$675</td>
+              </tr>
+              </table>
+            </div>
+            <div class= "inner">
+            Sometimes you may need the
+            entries in a table to stretch
+            across more than one column.
+            The <`colspan`> attribute can be
+            used on a <`th`> or <`td`> element
+            and indicates how many columns
+            that cell should run across.
+            <table>
+              <tr>
+              <th></th>
+              <th>9am</th>
+              <th>10am</th>
+              <th>11am</th>
+              <th>12am</th>
+              </tr>
+              <tr>
+              <th>Monday</th>
+              <td colspan="2">Geography</td>
+              <td>Math</td>
+              <td>Art</td>
+              </tr>
+              <tr>
+              <th>Tuesday</th>
+              <td colspan="3">Gym</td>
+              <td>Home Ec</td>
+              </tr>
+              </table>
+            </div>
+            <div class= "inner">
+            You may also need entries in
+            a table to stretch down across
+            more than one row.
+            The <`rowspan`> attribute can be
+            used on a <`th`> or <`td`> element
+            to indicate how many rows a cell
+            should span down the table.
+            <table>
+              <tr>
+              <th></th>
+              <th>ABC</th>
+              <th>BBC</th>
+              <th>CNN</th>
+              </tr>
+              <tr>
+              <th>6pm - 7pm</th>
+              <td rowspan="2">Movie</td>
+              <td>Comedy</td>
+              <td>News</td>
+              </tr>
+              <tr>
+              <th>7pm - 8pm</th>
+              <td>Sport</td>
+              <td>Current Affairs</td>
+              </tr>
+              </table>
+            </div>
+            
+            <div class= "inner">
+              further in CSS tables will be styled
+              according thier head,body and footer so:
+              <br><br>
+              The headings of the table should
+              sit inside the <`thead`> element.<br><br>
+              The body should sit inside the
+              <`tbody`> element.<br><br>
+              The footer belongs inside the
+              <`tfoot`> element.
+            </div>
+            
+    </div>
+
+
+
+
+
+</body>
+</html>
